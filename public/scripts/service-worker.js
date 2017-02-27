@@ -18,7 +18,6 @@ self.addEventListener('install', function(e) {
   );
 });
 
-/*
 self.addEventListener('activate', function(e) {
 console.log('[ServiceWorker] Activate');
 e.waitUntil(
@@ -33,7 +32,6 @@ caches.keys().then(function(keyList) {
 );
 return self.clients.claim();
 });
-*/
 
 self.addEventListener('fetch', function(e) {
   console.log('[ServiceWorker] fetch', e.request.url);
