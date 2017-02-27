@@ -36,7 +36,7 @@
 
    if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('../public/scripts/service-worker.js')
+             .register('service-worker.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
   
